@@ -3,6 +3,7 @@ import styles from '../styles/pages/Home.module.css';
 import { useUserContext } from '../UserProvider';
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import withAuth from '../withAuth'
 
 const Home = () => {
   const { user } = useUserContext();
@@ -31,4 +32,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default withAuth(Home);

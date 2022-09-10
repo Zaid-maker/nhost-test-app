@@ -1,19 +1,47 @@
-import styles from '../styles/components/SignUp.module.css';
+import styles from '../styles/components/SignUp.module.css'
+import { useState } from 'react'
+import { useRouter } from 'next/router'
+import { useSignUpEmailPassword } from '@nhost/nextjs'
+import Link from 'next/link'
+import Image from 'next/image'
+import Input from './Input'
+import Spinner from './Spinner'
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import Input from './Input';
+const SignIn = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-const SignUp = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const router = useRouter();
 
-  const handleOnSubmit = e => {
+  const {
+    signUpEmailPassword,
+    isLoading,
+    isSuccess,
+    needsEmailVerification,
+    isError,
+    error,
+  } = useSignUpEmailPassword();
+
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
+
+    await signUpEmailPassword(email, password, {
+      displayName: `${firstName} ${lastName}`.trim(),
+      metadata: {
+        firstName,
+        lastName,
+      },
+    });
   };
+
+  if (isSuccess) {
+    router.push("/");
+    return null;
+  }
+
+  const disableForm = isLoading || needsEmailVerification
 
   return (
     <div className={styles.container}>
@@ -22,40 +50,52 @@ const SignUp = () => {
           <Image src="/logo.svg" alt="logo" layout="fill" objectFit="contain" />
         </div>
 
-        <form onSubmit={handleOnSubmit} className={styles.form}>
-          <div className={styles['input-group']}>
+        {needsEmailVerification ? (
+          <p className={styles['verification-text']}>
+            Please check your mailbox and follow the verification link to verify your email.
+          </p>
+        ) : (
+          <form onSubmit={handleOnSubmit} className={styles.form}>
+            <div className={styles['input-group']}>
+              <Input
+                label="First name"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                disabled={disableForm}
+                required
+              />
+              <Input
+                label="Last name"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                disabled={disableForm}
+                required
+              />
+            </div>
             <Input
-              label="First name"
-              value={firstName}
-              onChange={e => setFirstName(e.target.value)}
+              type="email"
+              label="Email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              disabled={disableForm}
               required
             />
             <Input
-              label="Last name"
-              value={lastName}
-              onChange={e => setLastName(e.target.value)}
+              type="password"
+              label="Create password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              disabled={disableForm}
               required
             />
-          </div>
-          <Input
-            type="email"
-            label="Email address"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            required
-          />
-          <Input
-            type="password"
-            label="Create password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            required
-          />
 
-          <button type="submit" className={styles.button}>
-            Create account
-          </button>
-        </form>
+            <button type="submit" disabled={disableForm} className={styles.button}>
+              {isLoading ? <Spinner size="sm" /> : 'Create account'}
+            </button>
+
+            {isError ? <p className={styles['error-text']}>{error?.message}</p> : null}
+          </form>
+        )}
       </div>
 
       <p className={styles.text}>
@@ -65,7 +105,7 @@ const SignUp = () => {
         </Link>
       </p>
     </div>
-  );
+  )
 };
 
-export default SignUp;
+export default SignIn;
