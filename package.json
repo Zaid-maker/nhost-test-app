@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
-    "@headlessui/react": "^1.7.0",
+    "@headlessui/react": "^1.7.1",
     "@heroicons/react": "^1.0.6",
     "@nhost/nextjs": "^1.7.4",
     "@nhost/react": "^0.12.4",
@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.3.0"
   }
 }
