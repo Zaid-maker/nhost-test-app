@@ -163,12 +163,12 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.3.0.tgz#c1b983316307f8f55fee491942b5d244bd2036e2"
   integrity sha512-C/nw6OgQpEULWqs+wgMHXGvlJLguPRFFGqR2TAqWBerQ8J+Sg3z1ZTqwelkSi4FoqStGuZ2UdFHIDN1ySmR1xA==
 
-"@nhost/apollo@0.5.28":
-  version "0.5.28"
-  resolved "https://registry.yarnpkg.com/@nhost/apollo/-/apollo-0.5.28.tgz#a1083c7f98a827f583f1f8bdd47ea48118df0852"
-  integrity sha512-4Gc4HTDiueVWjkTlqOa5qRZVUNrK7ekaTohIfmcL6M+mcaILOzH0vYM1XGA8UOva+jPiIaWB6pW0Zk+Iq9sqig==
+"@nhost/apollo@0.5.29":
+  version "0.5.29"
+  resolved "https://registry.yarnpkg.com/@nhost/apollo/-/apollo-0.5.29.tgz#46718de46e8c6c7520a04dd09c9be46beb433fe2"
+  integrity sha512-muzxVef2w3oDU/KIKU3kZG+kxVSBreS/S0iOStJnLQ75LVPGEiiPjcNr62vgj5wh/i/3bkSYfrhv1ZaJHXZH2w==
   dependencies:
-    "@nhost/nhost-js" "1.4.11"
+    "@nhost/nhost-js" "1.4.12"
     graphql "16"
     graphql-ws "^5.7.0"
 
@@ -177,6 +177,16 @@
   resolved "https://registry.yarnpkg.com/@nhost/core/-/core-0.7.6.tgz#337da64750c8301f2255e24951cc757b032c64da"
   integrity sha512-tMN7uWm4EZtgOUZA+K/MWdKogKffTwhuJQk3vfbQr2nWT7drfMx75mzFh5n8Tr3l1NaTTQ3FV517FlTFNUPFVA==
   dependencies:
+    axios "^0.27.2"
+    js-cookie "^3.0.1"
+    xstate "^4.32.1"
+
+"@nhost/core@0.7.7":
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/@nhost/core/-/core-0.7.7.tgz#0698e67b5eea63b43f2bc641de9dc735c065fb06"
+  integrity sha512-1y/QNaCspdwdVW0uM8Yk2/ifskkYWayhQxIVNcG7GGEjEceQqWJwnPpTrDijuIoHUlwWAS1C7Icw9zEhvt+f+g==
+  dependencies:
+    "@simplewebauthn/browser" "^6.0.0"
     axios "^0.27.2"
     js-cookie "^3.0.1"
     xstate "^4.32.1"
@@ -190,10 +200,28 @@
     jwt-decode "^3.1.2"
     xstate "^4.32.1"
 
+"@nhost/hasura-auth-js@1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-auth-js/-/hasura-auth-js-1.4.3.tgz#4b3a40a83c8f0cc38df8f6eb17a615b69c0e243a"
+  integrity sha512-/O2aof1hLcYn7dbXY3Vt9cvyjGGACvKvuYLJqPo09qYVjY85Ib/zux7TpSJrXKMpJ7KKh9nEOPD+niamZ5aJlQ==
+  dependencies:
+    "@nhost/core" "0.7.7"
+    jwt-decode "^3.1.2"
+    xstate "^4.32.1"
+
 "@nhost/hasura-storage-js@0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-0.6.0.tgz#1b02af323774796f20746c92ff3b080ca245e25b"
   integrity sha512-6DWBlqWP/opGcOKeTGQd1u3KPL36C6HMVttLvigKfwntL944w0+HFObj9jfBdtwNNoJ9EH0uZ3do13tzUW3Lug==
+  dependencies:
+    axios "^0.27.2"
+    form-data "^4.0.0"
+    xstate "^4.32.1"
+
+"@nhost/hasura-storage-js@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-0.6.1.tgz#0f64fa91be189e922fba3f32c953f8dbe6584e63"
+  integrity sha512-5n+NzKPra+PKGLK+sH2SiIiMhCii6bUNigvMyQBM47UJ7TlCP/eG0ulgGFy4GzTJCC4k7xixeAIF6w9IvwCSwg==
   dependencies:
     axios "^0.27.2"
     form-data "^4.0.0"
@@ -221,12 +249,23 @@
     jwt-decode "^3.1.2"
     query-string "^7.0.1"
 
-"@nhost/react-apollo@^4.7.4":
-  version "4.7.4"
-  resolved "https://registry.yarnpkg.com/@nhost/react-apollo/-/react-apollo-4.7.4.tgz#362895fb298f1435d50f24c2409f7aa1281beffa"
-  integrity sha512-z9sfBkDQ42+WzOLBDviUvAJYZ72+bL/5eBroTpxzbBlwMMVxk439pTTEY9Om+nqVsYnYunj4Zflk02Ygr9MK5Q==
+"@nhost/nhost-js@1.4.12":
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/@nhost/nhost-js/-/nhost-js-1.4.12.tgz#6456bb9bc090e7fc8d1cf504d569d1da5fd0b5fd"
+  integrity sha512-OPByekY7o8J4fqAf8yWafBupuDcntdVyW6m0G4iFCM2ERNVmp5B6vxiurkuQuhJaONTfUcaITUVe3bGHKVD1Bg==
   dependencies:
-    "@nhost/apollo" "0.5.28"
+    "@nhost/hasura-auth-js" "1.4.3"
+    "@nhost/hasura-storage-js" "0.6.1"
+    axios "^0.27.2"
+    jwt-decode "^3.1.2"
+    query-string "^7.0.1"
+
+"@nhost/react-apollo@^4.7.5":
+  version "4.7.5"
+  resolved "https://registry.yarnpkg.com/@nhost/react-apollo/-/react-apollo-4.7.5.tgz#40db55d8c4b015b8642c3665b4632ec2cc215dfc"
+  integrity sha512-9wHbVuwW8uFPx9oC4fSaLYfq+0jQ7ecmzxEtg1w20EORIB1fgOprZdllG7t9F/ZoIZ1D7h2z7t3tTNCK4oNGow==
+  dependencies:
+    "@nhost/apollo" "0.5.29"
 
 "@nhost/react@^0.12.4":
   version "0.12.4"
@@ -266,6 +305,11 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
+
+"@simplewebauthn/browser@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@simplewebauthn/browser/-/browser-6.0.0.tgz#4c667042213799a4c6680bd9a7c8a8fb5512d31e"
+  integrity sha512-gaXZmNfBPFawVZLhDPHkArCt0ttUbNSQSq24muyFmUi/QfJIhvQfQH7kfqIwlAXKqs79qpJ4RCYsRUjVj0Yl6w==
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
