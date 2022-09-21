@@ -181,12 +181,31 @@
     js-cookie "^3.0.1"
     xstate "^4.32.1"
 
+"@nhost/core@0.7.7":
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/@nhost/core/-/core-0.7.7.tgz#0698e67b5eea63b43f2bc641de9dc735c065fb06"
+  integrity sha512-1y/QNaCspdwdVW0uM8Yk2/ifskkYWayhQxIVNcG7GGEjEceQqWJwnPpTrDijuIoHUlwWAS1C7Icw9zEhvt+f+g==
+  dependencies:
+    "@simplewebauthn/browser" "^6.0.0"
+    axios "^0.27.2"
+    js-cookie "^3.0.1"
+    xstate "^4.32.1"
+
 "@nhost/hasura-auth-js@1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@nhost/hasura-auth-js/-/hasura-auth-js-1.4.2.tgz#e6dd7991a0920016a54c51496854886227f6d45d"
   integrity sha512-Nfvio6DiqxsjhkjkF6JGOetKxlRSNXYv1OuxC7XSUwkyGe54BCCaIo27FQGySCXi6L7P4KQQQbiLX/PyXsMo3A==
   dependencies:
     "@nhost/core" "0.7.6"
+    jwt-decode "^3.1.2"
+    xstate "^4.32.1"
+
+"@nhost/hasura-auth-js@1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-auth-js/-/hasura-auth-js-1.4.3.tgz#4b3a40a83c8f0cc38df8f6eb17a615b69c0e243a"
+  integrity sha512-/O2aof1hLcYn7dbXY3Vt9cvyjGGACvKvuYLJqPo09qYVjY85Ib/zux7TpSJrXKMpJ7KKh9nEOPD+niamZ5aJlQ==
+  dependencies:
+    "@nhost/core" "0.7.7"
     jwt-decode "^3.1.2"
     xstate "^4.32.1"
 
@@ -199,13 +218,22 @@
     form-data "^4.0.0"
     xstate "^4.32.1"
 
-"@nhost/nextjs@^1.7.4":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@nhost/nextjs/-/nextjs-1.7.4.tgz#b9d62b95c9421027b628df9f5953010ab658033d"
-  integrity sha512-gqt4isiTy7OSj9bLnnqwu6kV8svpvRVtJ5qxU/BgExmp5EMQa9sNF6E6pLI+fwVNEC3SCsHuH184zIz/OJJzfw==
+"@nhost/hasura-storage-js@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-0.6.1.tgz#0f64fa91be189e922fba3f32c953f8dbe6584e63"
+  integrity sha512-5n+NzKPra+PKGLK+sH2SiIiMhCii6bUNigvMyQBM47UJ7TlCP/eG0ulgGFy4GzTJCC4k7xixeAIF6w9IvwCSwg==
   dependencies:
-    "@nhost/core" "0.7.6"
-    "@nhost/nhost-js" "1.4.11"
+    axios "^0.27.2"
+    form-data "^4.0.0"
+    xstate "^4.32.1"
+
+"@nhost/nextjs@^1.7.5":
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/@nhost/nextjs/-/nextjs-1.7.5.tgz#9c9ad79d9b9574b2c62e65b3e4d45c9cdcb88287"
+  integrity sha512-UPpIm+EcoSfsnzKAbAgnU0va4dmSTx7I1mcKNnGNmtXsqFi1glNgi8JLvUzirEG+rl7nujVHugcANMbtvPzO9A==
+  dependencies:
+    "@nhost/core" "0.7.7"
+    "@nhost/nhost-js" "1.4.12"
     cross-fetch "^3.1.5"
     js-cookie "^3.0.1"
     xstate "^4.32.1"
@@ -217,6 +245,17 @@
   dependencies:
     "@nhost/hasura-auth-js" "1.4.2"
     "@nhost/hasura-storage-js" "0.6.0"
+    axios "^0.27.2"
+    jwt-decode "^3.1.2"
+    query-string "^7.0.1"
+
+"@nhost/nhost-js@1.4.12":
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/@nhost/nhost-js/-/nhost-js-1.4.12.tgz#6456bb9bc090e7fc8d1cf504d569d1da5fd0b5fd"
+  integrity sha512-OPByekY7o8J4fqAf8yWafBupuDcntdVyW6m0G4iFCM2ERNVmp5B6vxiurkuQuhJaONTfUcaITUVe3bGHKVD1Bg==
+  dependencies:
+    "@nhost/hasura-auth-js" "1.4.3"
+    "@nhost/hasura-storage-js" "0.6.1"
     axios "^0.27.2"
     jwt-decode "^3.1.2"
     query-string "^7.0.1"
@@ -266,6 +305,11 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
+
+"@simplewebauthn/browser@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@simplewebauthn/browser/-/browser-6.0.0.tgz#4c667042213799a4c6680bd9a7c8a8fb5512d31e"
+  integrity sha512-gaXZmNfBPFawVZLhDPHkArCt0ttUbNSQSq24muyFmUi/QfJIhvQfQH7kfqIwlAXKqs79qpJ4RCYsRUjVj0Yl6w==
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
