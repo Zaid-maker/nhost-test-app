@@ -163,14 +163,14 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.3.0.tgz#c1b983316307f8f55fee491942b5d244bd2036e2"
   integrity sha512-C/nw6OgQpEULWqs+wgMHXGvlJLguPRFFGqR2TAqWBerQ8J+Sg3z1ZTqwelkSi4FoqStGuZ2UdFHIDN1ySmR1xA==
 
-"@nhost/apollo@0.5.28":
-  version "0.5.28"
-  resolved "https://registry.yarnpkg.com/@nhost/apollo/-/apollo-0.5.28.tgz#a1083c7f98a827f583f1f8bdd47ea48118df0852"
-  integrity sha512-4Gc4HTDiueVWjkTlqOa5qRZVUNrK7ekaTohIfmcL6M+mcaILOzH0vYM1XGA8UOva+jPiIaWB6pW0Zk+Iq9sqig==
+"@nhost/apollo@0.5.32":
+  version "0.5.32"
+  resolved "https://registry.yarnpkg.com/@nhost/apollo/-/apollo-0.5.32.tgz#a73b32c2c8649216901c8b48f42987b7f5c9d648"
+  integrity sha512-1m+IR+4B/2ZXLOI//5QsKQQDPeaDjihucu3aM/9DE7J9Q6uCMPgjdqN62XKeO4vB1afhX4JM+ySrPltB4O9lpA==
   dependencies:
-    "@nhost/nhost-js" "1.4.11"
-    graphql "16"
-    graphql-ws "^5.7.0"
+    "@nhost/nhost-js" "1.5.2"
+    graphql "15.7.2"
+    graphql-ws "^5.10.1"
 
 "@nhost/core@0.7.6":
   version "0.7.6"
@@ -190,6 +190,15 @@
     jwt-decode "^3.1.2"
     xstate "^4.32.1"
 
+"@nhost/hasura-auth-js@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-auth-js/-/hasura-auth-js-1.6.1.tgz#31f7a4ea9269da1f1da2fc604599a3ae9dab292f"
+  integrity sha512-gIy/3Q1G+F2slb+7/4ugL4HA2AQFAD7r/V9TnIxrgp8WA5hlnqrJObEf/vf0NV5WERIUFo6bLrHuk0D8F18pTg==
+  dependencies:
+    axios "^0.27.2"
+    jwt-decode "^3.1.2"
+    xstate "^4.33.5"
+
 "@nhost/hasura-storage-js@0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-0.6.0.tgz#1b02af323774796f20746c92ff3b080ca245e25b"
@@ -198,6 +207,15 @@
     axios "^0.27.2"
     form-data "^4.0.0"
     xstate "^4.32.1"
+
+"@nhost/hasura-storage-js@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-0.7.1.tgz#d60f076f007461b9bb2eda42ffc67275d3012443"
+  integrity sha512-vf/B43BT9ntibesh6mbaIpzxUG4H02E464CWPWsU4aZWWbCShZVYc5atVtlg8YlRkn6+QngwgXxUCjHFDquP/A==
+  dependencies:
+    axios "^0.27.2"
+    form-data "^4.0.0"
+    xstate "^4.33.5"
 
 "@nhost/nextjs@^1.7.4":
   version "1.7.4"
@@ -221,12 +239,23 @@
     jwt-decode "^3.1.2"
     query-string "^7.0.1"
 
-"@nhost/react-apollo@^4.7.4":
-  version "4.7.4"
-  resolved "https://registry.yarnpkg.com/@nhost/react-apollo/-/react-apollo-4.7.4.tgz#362895fb298f1435d50f24c2409f7aa1281beffa"
-  integrity sha512-z9sfBkDQ42+WzOLBDviUvAJYZ72+bL/5eBroTpxzbBlwMMVxk439pTTEY9Om+nqVsYnYunj4Zflk02Ygr9MK5Q==
+"@nhost/nhost-js@1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@nhost/nhost-js/-/nhost-js-1.5.2.tgz#03325f71ffb41ee6bc13c520f7452a3028ab4517"
+  integrity sha512-uZ+85KmqlrzS/8TLLnVgp2Ppg1Ncv1ONV71PxokiiAU7AMnIlhnE2DtRpjpwfqP137hP4ZOeqUsjCW5FgQSdJg==
   dependencies:
-    "@nhost/apollo" "0.5.28"
+    "@nhost/hasura-auth-js" "1.6.1"
+    "@nhost/hasura-storage-js" "0.7.1"
+    axios "^0.27.2"
+    jwt-decode "^3.1.2"
+    query-string "^7.0.1"
+
+"@nhost/react-apollo@^4.8.1":
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/@nhost/react-apollo/-/react-apollo-4.8.1.tgz#cfe5b441093463ccb81e945f2d3ea13ced12b356"
+  integrity sha512-rcoJT0F1SiXyTGw9AHn5OkXkFL0Hkq/EPT1ybrFd0Vh9zq/xtUOPkn2QSuLMk1bz3UbpJqGhkmzJJjQWOBVfMg==
+  dependencies:
+    "@nhost/apollo" "0.5.32"
 
 "@nhost/react@^0.12.4":
   version "0.12.4"
@@ -1138,12 +1167,17 @@ graphql-tag@^2.12.6:
   dependencies:
     tslib "^2.1.0"
 
-graphql-ws@^5.7.0:
-  version "5.10.1"
-  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.10.1.tgz#c5402a62f1be13e244ab90a6306b94f643577312"
-  integrity sha512-MKm/3SRd1vj5Km8NaujsgeGRTKZQjUN5HRnIMJ8dL2UznKoxvrtQyJqTmqJt0f6vQd9AooDg/+baXo3huiY4Ew==
+graphql-ws@^5.10.1:
+  version "5.11.2"
+  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.11.2.tgz#d5e0acae8b4d4a4cf7be410a24135cfcefd7ddc0"
+  integrity sha512-4EiZ3/UXYcjm+xFGP544/yW1+DVI8ZpKASFbzrV5EDTFWJp0ZvLl4Dy2fSZAzz9imKp5pZMIcjB0x/H69Pv/6w==
 
-graphql@16, graphql@^16.6.0:
+graphql@15.7.2:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.7.2.tgz#85ab0eeb83722977151b3feb4d631b5f2ab287ef"
+  integrity sha512-AnnKk7hFQFmU/2I9YSQf3xw44ctnSFCfp3zE0N6W174gqe9fWG/2rKaKxROK7CcI3XtERpjEKFqts8o319Kf7A==
+
+graphql@^16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.6.0.tgz#c2dcffa4649db149f6282af726c8c83f1c7c5fdb"
   integrity sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==
@@ -2097,7 +2131,7 @@ wrappy@1:
   resolved "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-xstate@^4.32.1:
+xstate@^4.32.1, xstate@^4.33.5:
   version "4.33.6"
   resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.33.6.tgz#9e23f78879af106f1de853aba7acb2bc3b1eb950"
   integrity sha512-A5R4fsVKADWogK2a43ssu8Fz1AF077SfrKP1ZNyDBD8lNa/l4zfR//Luofp5GSWehOQr36Jp0k2z7b+sH2ivyg==
