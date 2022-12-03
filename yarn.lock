@@ -181,6 +181,16 @@
     js-cookie "^3.0.1"
     xstate "^4.32.1"
 
+"@nhost/core@0.9.4":
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/@nhost/core/-/core-0.9.4.tgz#80ad29b895654111ec8169f23447e384c3e57dcc"
+  integrity sha512-XqHc5RVh8AWyLSh+pTlEmCXZ3VQaV37xQYUrPzIdNCUNAHiBdvK4KboxGJiSkUz7hEvA4yqgp3ph7N9w8jZR3Q==
+  dependencies:
+    "@simplewebauthn/browser" "^6.0.0"
+    axios "^1.2.0"
+    js-cookie "^3.0.1"
+    xstate "^4.33.5"
+
 "@nhost/hasura-auth-js@1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@nhost/hasura-auth-js/-/hasura-auth-js-1.4.2.tgz#e6dd7991a0920016a54c51496854886227f6d45d"
@@ -189,6 +199,15 @@
     "@nhost/core" "0.7.6"
     jwt-decode "^3.1.2"
     xstate "^4.32.1"
+
+"@nhost/hasura-auth-js@1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-auth-js/-/hasura-auth-js-1.6.4.tgz#0fb184e8918ca223a5b4affba2f5ccd8e52e5f94"
+  integrity sha512-LfWj1PQhASSZMVOK+LPHahHpjdgsbN1x3TJDE+SvS9DCj0MHQITQvsDNOeA9lPSX3N3h3Pw3tf0TY34w7aBrpA==
+  dependencies:
+    axios "^1.2.0"
+    jwt-decode "^3.1.2"
+    xstate "^4.33.5"
 
 "@nhost/hasura-storage-js@0.6.0":
   version "0.6.0"
@@ -199,16 +218,25 @@
     form-data "^4.0.0"
     xstate "^4.32.1"
 
-"@nhost/nextjs@^1.7.4":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@nhost/nextjs/-/nextjs-1.7.4.tgz#b9d62b95c9421027b628df9f5953010ab658033d"
-  integrity sha512-gqt4isiTy7OSj9bLnnqwu6kV8svpvRVtJ5qxU/BgExmp5EMQa9sNF6E6pLI+fwVNEC3SCsHuH184zIz/OJJzfw==
+"@nhost/hasura-storage-js@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-0.7.4.tgz#0102ebf803ad404814e5e3027ba1bbf6f5d355b2"
+  integrity sha512-/JOchl92cWSN+TKIUESdv4hmip4RTfdkvq3D/4ijberJVP0zL11Sjyq/A7mEwDMjp923qWYR7ygpjvRVwP2Ojw==
   dependencies:
-    "@nhost/core" "0.7.6"
-    "@nhost/nhost-js" "1.4.11"
+    axios "^1.2.0"
+    form-data "^4.0.0"
+    xstate "^4.33.5"
+
+"@nhost/nextjs@^1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@nhost/nextjs/-/nextjs-1.9.2.tgz#7d2e27cbb6366d0b788bd26670d639e9b785432e"
+  integrity sha512-rTOG4US0mh8l8Qz1s5y3+VwHBNOu/QjiH90s+x00TBnkibbsNUVlbArONHe1ilHELulhXEXc+MCIjh/Pkg6bJg==
+  dependencies:
+    "@nhost/core" "0.9.4"
+    "@nhost/nhost-js" "1.6.2"
     cross-fetch "^3.1.5"
     js-cookie "^3.0.1"
-    xstate "^4.32.1"
+    xstate "^4.33.5"
 
 "@nhost/nhost-js@1.4.11":
   version "1.4.11"
@@ -218,6 +246,17 @@
     "@nhost/hasura-auth-js" "1.4.2"
     "@nhost/hasura-storage-js" "0.6.0"
     axios "^0.27.2"
+    jwt-decode "^3.1.2"
+    query-string "^7.0.1"
+
+"@nhost/nhost-js@1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@nhost/nhost-js/-/nhost-js-1.6.2.tgz#386c4dc6eb300553107e2f217c83749e35942af9"
+  integrity sha512-kpgUJZmXD42+rV8IHa0bs1fjhFF8eFTalEglkluxlXiYMULI90dXLM5ueaT91vbciWwUZXUGdQWkxQO2G9bkhw==
+  dependencies:
+    "@nhost/hasura-auth-js" "1.6.4"
+    "@nhost/hasura-storage-js" "0.7.4"
+    axios "^1.2.0"
     jwt-decode "^3.1.2"
     query-string "^7.0.1"
 
@@ -266,6 +305,11 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
+
+"@simplewebauthn/browser@^6.0.0":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@simplewebauthn/browser/-/browser-6.2.2.tgz#3cd773a9887734331251d1b8dec043547a7bbd57"
+  integrity sha512-VUtne7+s6BmW4usnbitjZEI1VNT/PNh6bYg+AI4OMdfpo5z+yAq+6iVAWBJlIUGVk5InetEQvTUp6OefBam8qg==
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
@@ -466,6 +510,15 @@ axios@^0.27.2:
   dependencies:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
+
+axios@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.2.0.tgz#1cb65bd75162c70e9f8d118a905126c4a201d383"
+  integrity sha512-zT7wZyNYu3N5Bu0wuZ6QccIf93Qk1eV8LOewxgjOZFd2DenOs98cJ7+Y6703d0wkaXGY6/nZd4EweJaHz9uzQw==
+  dependencies:
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -991,6 +1044,11 @@ follow-redirects@^1.14.9:
   version "1.15.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
   integrity sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
+
+follow-redirects@^1.15.0:
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
+  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
 form-data@^4.0.0:
   version "4.0.0"
@@ -1698,6 +1756,11 @@ prop-types@^15.7.2, prop-types@^15.8.1:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
+
 punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz"
@@ -2101,6 +2164,11 @@ xstate@^4.32.1:
   version "4.33.6"
   resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.33.6.tgz#9e23f78879af106f1de853aba7acb2bc3b1eb950"
   integrity sha512-A5R4fsVKADWogK2a43ssu8Fz1AF077SfrKP1ZNyDBD8lNa/l4zfR//Luofp5GSWehOQr36Jp0k2z7b+sH2ivyg==
+
+xstate@^4.33.5:
+  version "4.34.0"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.34.0.tgz#401901c478f0b2a7f07576c020b6e6f750b5bd10"
+  integrity sha512-MFnYz7cJrWuXSZ8IPkcCyLB1a2T3C71kzMeShXKmNaEjBR/JQebKZPHTtxHKZpymESaWO31rA3IQ30TC6LW+sw==
 
 yallist@^4.0.0:
   version "4.0.0"
