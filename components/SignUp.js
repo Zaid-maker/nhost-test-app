@@ -7,38 +7,32 @@ import Image from 'next/image'
 import Input from './Input'
 import Spinner from './Spinner'
 
-const SignIn = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const SignUp = () => {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
-  const router = useRouter();
+  const router = useRouter()
 
-  const {
-    signUpEmailPassword,
-    isLoading,
-    isSuccess,
-    needsEmailVerification,
-    isError,
-    error,
-  } = useSignUpEmailPassword();
+  const { signUpEmailPassword, isLoading, isSuccess, needsEmailVerification, isError, error } =
+    useSignUpEmailPassword()
 
   const handleOnSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     await signUpEmailPassword(email, password, {
       displayName: `${firstName} ${lastName}`.trim(),
       metadata: {
         firstName,
-        lastName,
-      },
-    });
-  };
+        lastName
+      }
+    })
+  }
 
   if (isSuccess) {
-    router.push("/");
-    return null;
+    router.push('/')
+    return null
   }
 
   const disableForm = isLoading || needsEmailVerification
@@ -106,6 +100,6 @@ const SignIn = () => {
       </p>
     </div>
   )
-};
+}
 
-export default SignIn;
+export default SignUp
