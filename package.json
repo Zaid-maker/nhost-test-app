@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
-    "@headlessui/react": "^1.7.12",
+    "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^1.0.6",
     "@nhost/nextjs": "^1.7.4",
     "@nhost/react": "^0.12.4",
