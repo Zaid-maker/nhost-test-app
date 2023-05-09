@@ -183,6 +183,14 @@
     js-cookie "^3.0.1"
     xstate "^4.32.1"
 
+"@nhost/graphql-js@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@nhost/graphql-js/-/graphql-js-0.1.1.tgz#abeae63ab6f3e87b14574b97adda4f77d649b0cf"
+  integrity sha512-FQWP2w33yRz0MutOicQ31twSsRslAgy0fHpPcXQAPPQejSLp+gFOI7yEdbsloSI8dnHonNo46NiKPq29OTN8fg==
+  dependencies:
+    "@graphql-typed-document-node/core" "^3.1.1"
+    isomorphic-unfetch "^3.1.0"
+
 "@nhost/hasura-auth-js@1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@nhost/hasura-auth-js/-/hasura-auth-js-1.4.2.tgz#e6dd7991a0920016a54c51496854886227f6d45d"
@@ -191,6 +199,17 @@
     "@nhost/core" "0.7.6"
     jwt-decode "^3.1.2"
     xstate "^4.32.1"
+
+"@nhost/hasura-auth-js@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-auth-js/-/hasura-auth-js-2.1.1.tgz#6d609882ef3bd8d7e71e9421dc53a2dea8e8d741"
+  integrity sha512-b+dF7GfrOH9Di88dOGqma6/guocrlTZBoe6pEPw0HDcpCD7AnnYBSCtsJX0yRCCREsH/Am4RnroGMnxB+E5LEA==
+  dependencies:
+    "@simplewebauthn/browser" "^6.0.0"
+    isomorphic-unfetch "^3.1.0"
+    js-cookie "^3.0.1"
+    jwt-decode "^3.1.2"
+    xstate "^4.33.5"
 
 "@nhost/hasura-storage-js@0.6.0":
   version "0.6.0"
@@ -201,16 +220,24 @@
     form-data "^4.0.0"
     xstate "^4.32.1"
 
-"@nhost/nextjs@^1.7.4":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@nhost/nextjs/-/nextjs-1.7.4.tgz#b9d62b95c9421027b628df9f5953010ab658033d"
-  integrity sha512-gqt4isiTy7OSj9bLnnqwu6kV8svpvRVtJ5qxU/BgExmp5EMQa9sNF6E6pLI+fwVNEC3SCsHuH184zIz/OJJzfw==
+"@nhost/hasura-storage-js@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-2.1.1.tgz#7c044dbe500cee931d9521f5e11660f4c4030f85"
+  integrity sha512-yp5OJAnae2XDNwMvH5Ye0T3K8EY5NKzpTCjtEW+x0LUSIHXiC6dxPp12cvjL4trlNTBcmDMLnvmljwkECe8ViA==
   dependencies:
-    "@nhost/core" "0.7.6"
-    "@nhost/nhost-js" "1.4.11"
-    cross-fetch "^3.1.5"
+    form-data "^4.0.0"
+    isomorphic-unfetch "^3.1.0"
+    xstate "^4.33.5"
+
+"@nhost/nextjs@^1.13.22":
+  version "1.13.22"
+  resolved "https://registry.yarnpkg.com/@nhost/nextjs/-/nextjs-1.13.22.tgz#676e3ac3a2a7281e1228d0a23c83206899a8f987"
+  integrity sha512-kOpYkopAQCNZs3NuT7JvHd+AKCP8Un99nb58rM+jqXHktDnGg/zNpv2MkWhJO3Sq0w3971xhKBt4oLWdszzyZg==
+  dependencies:
+    "@nhost/react" "2.0.16"
+    isomorphic-unfetch "^3.1.0"
     js-cookie "^3.0.1"
-    xstate "^4.32.1"
+    xstate "^4.33.5"
 
 "@nhost/nhost-js@1.4.11":
   version "1.4.11"
@@ -223,12 +250,32 @@
     jwt-decode "^3.1.2"
     query-string "^7.0.1"
 
+"@nhost/nhost-js@2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@nhost/nhost-js/-/nhost-js-2.2.2.tgz#7ec37fea0c7dab8d1552e879689a208d82ebb854"
+  integrity sha512-3rYmyng/I3eaB1hzC9Adu52J5UXjGLzhnrY3uYFX0DcrdV6p/Wysl4bsceFh4bWNoxONbPgwskwQkhboOm6ltQ==
+  dependencies:
+    "@nhost/graphql-js" "0.1.1"
+    "@nhost/hasura-auth-js" "2.1.1"
+    "@nhost/hasura-storage-js" "2.1.1"
+    isomorphic-unfetch "^3.1.0"
+
 "@nhost/react-apollo@^4.7.4":
   version "4.7.4"
   resolved "https://registry.yarnpkg.com/@nhost/react-apollo/-/react-apollo-4.7.4.tgz#362895fb298f1435d50f24c2409f7aa1281beffa"
   integrity sha512-z9sfBkDQ42+WzOLBDviUvAJYZ72+bL/5eBroTpxzbBlwMMVxk439pTTEY9Om+nqVsYnYunj4Zflk02Ygr9MK5Q==
   dependencies:
     "@nhost/apollo" "0.5.28"
+
+"@nhost/react@2.0.16":
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/@nhost/react/-/react-2.0.16.tgz#d2403663903e7c6f54a8951ca1fa145fa4744d64"
+  integrity sha512-Y+/TIlZfdMkK3oQXqTP0k4x70BPjveByAP32L4RMeujgZxH4TtndDxwITEXaCux3EJk3/q+3xEDKIvW4b3qXkA==
+  dependencies:
+    "@nhost/nhost-js" "2.2.2"
+    "@xstate/react" "^3.0.1"
+    jwt-decode "^3.1.2"
+    xstate "^4.33.5"
 
 "@nhost/react@^0.12.4":
   version "0.12.4"
@@ -268,6 +315,11 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
+
+"@simplewebauthn/browser@^6.0.0":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@simplewebauthn/browser/-/browser-6.2.2.tgz#3cd773a9887734331251d1b8dec043547a7bbd57"
+  integrity sha512-VUtne7+s6BmW4usnbitjZEI1VNT/PNh6bYg+AI4OMdfpo5z+yAq+6iVAWBJlIUGVk5InetEQvTUp6OefBam8qg==
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
@@ -352,6 +404,14 @@
   integrity sha512-/tq/gg92P9ke8J+yDNDBv5/PAxBvXJf2cYyGDByzgtl5wKaxKxzDT82Gj3eWlCJXkrBg4J5/V47//gRJuVH2fA==
   dependencies:
     use-isomorphic-layout-effect "^1.0.0"
+    use-sync-external-store "^1.0.0"
+
+"@xstate/react@^3.0.1":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@xstate/react/-/react-3.2.2.tgz#ddf0f9d75e2c19375b1e1b7335e72cb99762aed8"
+  integrity sha512-feghXWLedyq8JeL13yda3XnHPZKwYDN5HPBLykpLeuNpr9178tQd2/3d0NrH6gSd0sG5mLuLeuD+ck830fgzLQ==
+  dependencies:
+    use-isomorphic-layout-effect "^1.1.2"
     use-sync-external-store "^1.0.0"
 
 acorn-jsx@^5.3.1:
@@ -558,13 +618,6 @@ core-js-pure@^3.20.2:
   version "3.22.3"
   resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.22.3.tgz"
   integrity sha512-oN88zz7nmKROMy8GOjs+LN+0LedIvbMdnB5XsTlhcOg1WGARt9l0LFg0zohdoFmCsEZ1h2ZbSQ6azj3M+vhzwQ==
-
-cross-fetch@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
-  integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
-  dependencies:
-    node-fetch "2.6.7"
 
 cross-spawn@^7.0.2:
   version "7.0.3"
@@ -1354,6 +1407,14 @@ isexe@^2.0.0:
   resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
+isomorphic-unfetch@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/isomorphic-unfetch/-/isomorphic-unfetch-3.1.0.tgz#87341d5f4f7b63843d468438128cb087b7c3e98f"
+  integrity sha512-geDJjpoZ8N0kWexiwkX8F9NkTsXhetLPVbZFQ+JTW239QNOwvB0gniuR1Wc6f0AMTn7/mFGyXvHTifrCp/GH8Q==
+  dependencies:
+    node-fetch "^2.6.1"
+    unfetch "^4.2.0"
+
 js-cookie@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
@@ -1536,10 +1597,10 @@ next@12.3.0:
     "@next/swc-win32-ia32-msvc" "12.3.0"
     "@next/swc-win32-x64-msvc" "12.3.0"
 
-node-fetch@2.6.7:
-  version "2.6.7"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
-  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+node-fetch@^2.6.1:
+  version "2.6.11"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.11.tgz#cde7fc71deef3131ef80a738919f999e6edfff25"
+  integrity sha512-4I6pdBY1EthSqDmJkiNk3JIT8cswwR9nfeW/cPdUagJYEQG7R95WRH74wpz7ma8Gh/9dI9FP+OU+0E4FvtA55w==
   dependencies:
     whatwg-url "^5.0.0"
 
@@ -2041,6 +2102,11 @@ unbox-primitive@^1.0.1, unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
+unfetch@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-4.2.0.tgz#7e21b0ef7d363d8d9af0fb929a5555f6ef97a3be"
+  integrity sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==
+
 uri-js@^4.2.2:
   version "4.4.1"
   resolved "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz"
@@ -2048,7 +2114,7 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-isomorphic-layout-effect@^1.0.0:
+use-isomorphic-layout-effect@^1.0.0, use-isomorphic-layout-effect@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/use-isomorphic-layout-effect/-/use-isomorphic-layout-effect-1.1.2.tgz#497cefb13d863d687b08477d9e5a164ad8c1a6fb"
   integrity sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==
@@ -2108,6 +2174,11 @@ xstate@^4.32.1:
   version "4.33.6"
   resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.33.6.tgz#9e23f78879af106f1de853aba7acb2bc3b1eb950"
   integrity sha512-A5R4fsVKADWogK2a43ssu8Fz1AF077SfrKP1ZNyDBD8lNa/l4zfR//Luofp5GSWehOQr36Jp0k2z7b+sH2ivyg==
+
+xstate@^4.33.5:
+  version "4.37.2"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.37.2.tgz#c5f4c1d8062784238b91e2dfddca05f821cb4eac"
+  integrity sha512-Qm337O49CRTZ3PRyRuK6b+kvI+D3JGxXIZCTul+xEsyFCVkTFDt5jixaL1nBWcUBcaTQ9um/5CRGVItPi7fveg==
 
 yallist@^4.0.0:
   version "4.0.0"
