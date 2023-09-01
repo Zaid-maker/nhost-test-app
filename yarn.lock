@@ -220,21 +220,21 @@
     form-data "^4.0.0"
     xstate "^4.32.1"
 
-"@nhost/hasura-storage-js@2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-2.2.3.tgz#ff505d7aa2053ff7abe8ef238c0b5e84e48261ed"
-  integrity sha512-+4jKWBoQ3OYz4+JjA1BlNoSk/hY9F1DxyHzDFTwz7lINER0qlTk2ZYiQgFEUW/aFuDYSPXo0Tsel07hqS3R/UQ==
+"@nhost/hasura-storage-js@2.2.4":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@nhost/hasura-storage-js/-/hasura-storage-js-2.2.4.tgz#142d9a1677943519dedc8e9151c86fa976531fc2"
+  integrity sha512-nx/BvxkYQITDel/DM+gLFojkF07AAzQD/h4+1pjflT/Bd3pdDGLO2tVkPKQItVlRFZokfJZnHCt0Zi/umiIvow==
   dependencies:
     fetch-ponyfill "^7.1.0"
     form-data "^4.0.0"
     xstate "^4.33.5"
 
-"@nhost/nextjs@^1.13.36":
-  version "1.13.36"
-  resolved "https://registry.yarnpkg.com/@nhost/nextjs/-/nextjs-1.13.36.tgz#304d8f422ca56b43354f5340f69a75eaaf8dd707"
-  integrity sha512-x8J4K/lNWcHL9Cd8RTNl3D2Aqhd8JdmgmZKKwKT5CVZVrXsZYJM3LsNTdwtawlbjJTb80BdlbN6v2zwpOWBAcw==
+"@nhost/nextjs@^1.13.37":
+  version "1.13.37"
+  resolved "https://registry.yarnpkg.com/@nhost/nextjs/-/nextjs-1.13.37.tgz#19326a1af5841ea86cd7503301f6c8dbdd74c83e"
+  integrity sha512-OArAs4ySqF6ej5fBIFMTkqMF4x16G5f8Ny0mtg62mTaRw4+F2ljG4mXGcDmStvLBCsXJVYofuYlBy3jF4yje2w==
   dependencies:
-    "@nhost/react" "2.0.30"
+    "@nhost/react" "2.0.31"
     isomorphic-unfetch "^3.1.0"
     js-cookie "^3.0.1"
     xstate "^4.33.5"
@@ -250,14 +250,14 @@
     jwt-decode "^3.1.2"
     query-string "^7.0.1"
 
-"@nhost/nhost-js@2.2.15":
-  version "2.2.15"
-  resolved "https://registry.yarnpkg.com/@nhost/nhost-js/-/nhost-js-2.2.15.tgz#091c0f20de9206984b8564f6ccd548a15d6744fe"
-  integrity sha512-/guOx3HymPue+y/gEGrP/VNY5KsXPoXt0k43jPCJu6/mkZF1NJh01+CWNCGASR1H+fe+TEF7FggLJgcVwlF9vQ==
+"@nhost/nhost-js@2.2.16":
+  version "2.2.16"
+  resolved "https://registry.yarnpkg.com/@nhost/nhost-js/-/nhost-js-2.2.16.tgz#8f372099646aa08b800ad2e188debb1851198a53"
+  integrity sha512-4XYF6Db9R5uZd6SQO+2Eg7gbAUC7SrgkHVeJoIZwPX4m6x6rDX847830h+9VmkQ5F/F1KunYSxWz7Hb4WBcLZA==
   dependencies:
     "@nhost/graphql-js" "0.1.4"
     "@nhost/hasura-auth-js" "2.1.8"
-    "@nhost/hasura-storage-js" "2.2.3"
+    "@nhost/hasura-storage-js" "2.2.4"
     isomorphic-unfetch "^3.1.0"
 
 "@nhost/react-apollo@^4.7.4":
@@ -267,12 +267,12 @@
   dependencies:
     "@nhost/apollo" "0.5.28"
 
-"@nhost/react@2.0.30":
-  version "2.0.30"
-  resolved "https://registry.yarnpkg.com/@nhost/react/-/react-2.0.30.tgz#0112490d20cd2d4fe80ce423feb2f09d27d2c17a"
-  integrity sha512-2OM45kBM+PyNXO28q5btXB+wN0HbvaNsxUqJi+fbXalO7NUw6eBJdiGwQNg38W9m059v+N7ZjuyAL/qgJwiUyg==
+"@nhost/react@2.0.31":
+  version "2.0.31"
+  resolved "https://registry.yarnpkg.com/@nhost/react/-/react-2.0.31.tgz#51303331d66d89ca272ca9236ec204c95b063da7"
+  integrity sha512-3Oj4lcgAddMPo5MEFhNZYYZr/usC3nd+f/Kq8bMVJr3UZStUnfjkw6DySnmk2TMX2R2G0KLx1AjG6bJpN3E5zg==
   dependencies:
-    "@nhost/nhost-js" "2.2.15"
+    "@nhost/nhost-js" "2.2.16"
     "@xstate/react" "^3.0.1"
     jwt-decode "^3.1.2"
     xstate "^4.33.5"
