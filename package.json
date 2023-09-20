@@ -15,7 +15,7 @@
     "@nhost/react": "^0.12.4",
     "@nhost/react-apollo": "^4.7.4",
     "classnames": "^2.3.2",
-    "graphql": "^16.6.0",
+    "graphql": "^16.8.1",
     "next": "12.3.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
