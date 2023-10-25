@@ -11,7 +11,7 @@
     "@apollo/client": "^3.6.9",
     "@headlessui/react": "^1.7.12",
     "@heroicons/react": "^1.0.6",
-    "@nhost/nextjs": "^1.13.36",
+    "@nhost/nextjs": "^1.13.39",
     "@nhost/react": "^0.12.4",
     "@nhost/react-apollo": "^4.7.4",
     "classnames": "^2.3.2",
